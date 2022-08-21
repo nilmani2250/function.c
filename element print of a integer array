@@ -1,0 +1,28 @@
+// Design  a function to print element of a given integer array.//
+
+#include<stdio.h>
+void print_array(const int*,int);
+
+//void print_array(int[5],int);//
+
+void main()
+{
+int a[5]={10,20,30,40,50};
+int ele;
+ele=sizeof(a)\sizeof(a[0]);
+printf_array(a,ele);
+}
+//void print_array(int p[5],int n)
+
+void print_array(const int *p,int n)
+{
+int i;
+//printf("%ld\n",sizeof(p));//
+
+for(i=0;i<n;i++)
+printf("%d",p[i]);
+
+//printf("%d".*p++);//
+
+printf("\n");
+}
