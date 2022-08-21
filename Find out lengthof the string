@@ -1,0 +1,23 @@
+//Design a function too find out yhe length of the string.//
+
+#include<stdio.h>
+int  my_strlen(const char *);
+void main()
+{
+char s[10];
+int l;
+printf("Enter the string\n");
+scanf("%s",s);
+l=my_strlen(s);
+printf("l=%d\n",l);
+}
+int my_strlen(const char*p)
+{
+int c=0;
+while(*p)     //for(i=0;p[i];i++)
+{
+c++;
+p++;
+}
+return c;    //return i;
+}
