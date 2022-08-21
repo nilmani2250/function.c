@@ -1,0 +1,22 @@
+//WAP to Design a function to count how many bits are set in a given in integer value.//
+
+#include<stdio.h>
+void print_binary(int);
+int count_bits(int);
+void main()
+{
+int num,r;
+printf("Enter the number....\n");
+scanf("%d",&num);
+r=count-bits(num);
+printf("r=%d\n",r);
+}
+int count_bit(int num)
+{
+int pos,c;
+for(pos=0,c=0;pos<=31;pos++)
+ if(num>>pos&1)
+ c++;
+ return c;
+ }
+ 
