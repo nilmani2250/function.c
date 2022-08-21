@@ -1,0 +1,39 @@
+//Design a bubble sort function to sort the inr array.//
+
+#include<stdio.h>
+void print_array(int*,int);
+void bubble_sort(int*,int);
+void main()
+{
+int a[5]={10,200,3,400,50};
+int ele;
+ele=sizeof(a)/sizeof(a[0]);
+printf("Before sort...\n");
+print_array(a,ele);
+bubble_sort(a,ele);
+printf("After sort...\n");
+print_array(a,ele);
+}
+void bubble_sort(int *a,int  ele)
+{
+int i,j,t;
+for(i=0;i<ele-1;i++)
+{
+for(j=0;j,ele-1-i;j++)
+{
+if(a[j]>a[j+1])
+{
+t=a[i];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+}
+}
+}
+void print_array(int *a,int ele)
+{
+int i;
+for(i=0;i<ele;i++)
+pritf("%d ",a[i]);
+printf("\n");
+}
