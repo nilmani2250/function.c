@@ -1,0 +1,29 @@
+#include<stdio.h>
+void my_strrev(char *)
+void main()
+{
+char s[10];
+int l;
+printf("Enter the string\n");
+scanf("%s",s);
+printf("Before rev s=%s\n",s);
+my_strrev(s);
+printf("After rev s=%s\n",s);
+}
+
+void my_strrev(char *p)
+{
+char ch;     
+char *q;
+q=p;
+while(*q)
+q++;
+q--;
+while(p<q)
+{
+ch=*p;
+*p=*q;
+*q=ch;
+p++;
+q--;
+}
