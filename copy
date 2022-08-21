@@ -1,0 +1,23 @@
+//WAP design a function to  copy the source string  into destination.//
+
+#include<stdio.h>
+void my_strcpy(const char *,char*);
+void main()
+{
+char s[10],d[10];
+int l;
+printf("Enter the string\n");
+scanf("%s",s);
+my_strcpy(s,d);
+printf("s=%s d=%s\n",s,d);
+}
+void my_strcpy(const char *s,char *d)
+{
+while(*s)     
+{
+*d=*s;
+s++;
+d++;
+}
+*d=*s;
+}
